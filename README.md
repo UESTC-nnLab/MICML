@@ -24,35 +24,35 @@ In small object detection, single modality can only provide a limited support to
 ### Train
 ```python
 python train.py --model_name MICML 
-		        --gpus 0,1 
-		        --lr 1.25e-4 
-		        --lr_step 30,45 
-		        --num_epochs 55 
-		        --batch_size 2 
-		        --val_intervals 5  
-		        --test_large_size True 
-		        --datasetname  {dataset name} 
-		        --data_dir {dataset path} 
+		--gpus 0,1 
+		--lr 1.25e-4 
+		--lr_step 30,45 
+		--num_epochs 55 
+		--batch_size 2 
+		--val_intervals 5  
+		--test_large_size True 
+		--datasetname  {dataset name} 
+		--data_dir {dataset path} 
 ```
 
 ### Test and visulization
 ```python
 python test.py --model_name MICML 
-		       --gpus 0 
-		       --load_model {checkpoint path} 
-		       --test_large_size True 
-		       --datasetname {dataset name} 
-		       --data_dir {dataset path} 
+               --gpus 0 
+               --load_model {checkpoint path} 
+               --test_large_size True 
+               --datasetname {dataset name} 
+               --data_dir {dataset path} 
 ```
 
 ### Evaluation
 ```python
 python testSaveMat.py --model_name MICML 
-                                      --gpus 0 
-                                      --load_model  {checkpoint path}  
-                                      --test_large_size True 
-                                      --datasetname rsdata 
-                                      --data_dir  {dataset path}
+                      --gpus 0 
+                      --load_model  {checkpoint path}  
+                      --test_large_size True 
+                      --datasetname rsdata 
+                      --data_dir  {dataset path}
 ```
 
 ```python
