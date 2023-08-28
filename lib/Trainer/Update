@@ -62,7 +62,6 @@ class ModelWithLoss(torch.nn.Module):
         return outputs[-1], loss, loss_stats
         
 
-
 class BaseTrainer(object):
     def __init__(
             self, opt, model, optimizer=None):
