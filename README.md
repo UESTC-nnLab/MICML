@@ -47,12 +47,7 @@ python test.py --model_name MICML
 
 ### Evaluation
 ```python
-python testSaveMat.py --model_name MICML 
-                      --gpus 0 
-                      --load_model  {checkpoint path}  
-                      --test_large_size True 
-                      --datasetname rsdata 
-                      --data_dir  {dataset path}
+python testSaveMat.py
 ```
 
 ```python
